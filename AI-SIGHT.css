@@ -1,0 +1,134 @@
+*::-webkit-scrollbar {
+    height: 10px;
+    width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #9DA4A6;
+    height:10px;
+}
+
+*::-webkit-scrollbar-track:hover {
+    background-color: #83888A;
+}
+
+*::-webkit-scrollbar-track:active {
+    background-color: #8C9294;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #543EA5;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: #5031AC;
+}
+
+*::-webkit-scrollbar-thumb:active {
+    background-color: #7B4DB2;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: linear-gradient(to right, #9067C6, #2074c3);
+    color: white;
+}
+.container {
+    padding: 20px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+.start-chat {
+    background: linear-gradient(to right, #0064c2, #451f76);;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+.chat-area {
+    height: 70vh;
+    background-color: rgb(7, 7, 65);
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    overflow-y: auto; /* Add scrollbar for chat area */
+    text-align: -webkit-center;
+    display: flex;
+    flex-direction: column;
+    /* scrollbar-width: none; */
+}
+.input-area {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+}
+.input-box {
+    flex: 1;
+    background-color: rgb(42 42 93 / 80%);
+    padding: 10px;
+    font-size: 1.1em;
+    height: 1.1em;
+    border-radius: 20px;
+    border: none;
+    color:white;
+}
+.send-button {
+    background-color: #9067C6;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+/* Style for chat messages */
+.chat-message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+    word-break: break-word;
+}
+.user-message {
+    background-color: #9067C6;
+    text-align: left;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    max-width: 45vw;
+}
+.bot-message {
+    background-color: #727070;
+    text-align: left;
+    
+}
+
+
+
+
+
+
+@media screen and (max-width: 896px){
+    .chat-area {
+        height: 58vh;
+    }
+}
